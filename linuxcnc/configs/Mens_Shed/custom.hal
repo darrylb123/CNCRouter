@@ -1,0 +1,20 @@
+# Include your customized HAL commands here
+# This file will not be overwritten when you run stepconf again
+#
+# --- X drive ALM ---
+net axis.0.amp−fault−in       <= parport.1.pin-09-in-not
+
+loadusr -Wn vfd hy_vfd -n vfd -d /dev/ttyUSB0 -p none -r 9600
+setp vfd.enable 1 # This enables the VFD in the driver
+net spindle-cmd-rpm-abs => vfd.speed-command
+net spindle-cw motion.spindle-forward => vfd.spindle-forward
+net spindle-ccw motion.spindle-reverse => vfd.spindle-reverse
+net on motion.spindle-on => vfd.spindle-on
+net spindle-current <= vfd.OutA
+net spindle-comm-ok <= vfd.hycomm-ok
+
+net spindle-at-speed => vfd.spindle-at-speed
+net spindle-at-speed <= vfd.spindle-at-speed
+net spindle-at-speed-not => motion.feed-inhibit
+
+
