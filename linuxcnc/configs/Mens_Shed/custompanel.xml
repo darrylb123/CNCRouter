@@ -35,5 +35,18 @@
                         <halpin>"spindle-current"</halpin>
                         <max_>20</max_>
                 </bar>
+		<meter>
+                        <halpin>"spindle-current"</halpin>
+                        <text>"Spindle Current"</text>
+                        <subtext>"Amps"</subtext>
+                        <size>250</size>
+                        <min_>0</min_>
+                        <max_>20</max_>
+                        <majorscale>1</majorscale>
+                        <minorscale>0.2</minorscale>
+                        <region1>(0,15,"green")</region2>
+                        <region2>(15,20,"red")</region3>
+                </meter>
+
         </vbox>
 </pyvcp>
