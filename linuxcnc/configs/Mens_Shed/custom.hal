@@ -17,4 +17,5 @@ net spindle-at-speed => vfd.spindle-at-speed
 net spindle-at-speed <= vfd.spindle-at-speed
 net spindle-at-speed-not => motion.feed-inhibit
 
+loadusr halui -ini /home/cncuser/linuxcnc/configs/MensShed/halui.ini
 

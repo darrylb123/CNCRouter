@@ -31,13 +31,9 @@
                         <text>"Spindle Amps:"</text>
                         <font>("Helvetica",20)</font>
                 </label>
-                <bar>
-                        <halpin>"spindle-current"</halpin>
-                        <max_>20</max_>
-                </bar>
 		<meter>
                         <halpin>"spindle-current"</halpin>
-                        <text>"Spindle Current"</text>
+                        <text>"Spindle"</text>
                         <subtext>"Amps"</subtext>
                         <size>250</size>
                         <min_>0</min_>
