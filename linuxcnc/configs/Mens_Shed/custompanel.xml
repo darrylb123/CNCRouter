@@ -3,6 +3,11 @@
          <vbox>
          <relief>RIDGE</relief>         
          <bd>6</bd>
+	 	<button>
+     			<halpin>"touchplate-mm"</halpin>
+     			<text>"Z Touchplate"</text> 
+     			<font>('Fixed',16)</font>
+ 		</button>
                 <label>
                         <text>"Spindle Speed:"</text>
                         <font>("Helvetica",20)</font>
@@ -40,8 +45,9 @@
                         <max_>20</max_>
                         <majorscale>1</majorscale>
                         <minorscale>0.2</minorscale>
-                        <region1>(0,15,"green")</region2>
-                        <region2>(15,20,"red")</region3>
+                        <region1>(0,11,"green")</region1>
+                        <region2>(11,15,"green")</region2>
+                        <region3>(15,20,"red")</region3>
                 </meter>
 
         </vbox>
