@@ -13,9 +13,9 @@ net on motion.spindle-on => vfd.spindle-on
 net spindle-current <= vfd.OutA
 net spindle-comm-ok <= vfd.hycomm-ok
 
-net spindle-at-speed => vfd.spindle-at-speed
-net spindle-at-speed <= vfd.spindle-at-speed
-net spindle-at-speed-not => motion.feed-inhibit
+net up-to-speed <= vfd.spindle-at-speed
+net current-speed <= vfd.spindle-speed-fb
+net up-to-speed-not => motion.feed-inhibit
 
 loadusr halui -ini /home/cncuser/linuxcnc/configs/MensShed/halui.ini
 
