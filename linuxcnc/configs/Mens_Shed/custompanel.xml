@@ -10,11 +10,12 @@
 		</hbox>
 	</labelframe>
 	<labelframe text="Spindle Speed">
-		<table flexible_rows="[3]" flexible_columns="[2]">
+		<table flexible_rows="[3]" flexible_columns="[3]">
 		<tablesticky sticky="new"/>
 		<tablerow/>
 			<tablesticky sticky="new"/>
 			<label text="Setpoint:"/>
+			<label text="            "/>
 			<number>
 				<halpin>"spindle-setpoint"</halpin>
 				<font>("Helvetica",20)</font>
@@ -22,13 +23,16 @@
 		        </number>
 		<tablerow/>
 			<label text="Actual RPM:"/>
+			<label text="            "/>
 			<number>
 				<halpin>"spindle-speed"</halpin>
 				<font>("Helvetica",20)</font>
 		                <format>"d"</format>
 		        </number>
 		<tablerow/>
-			<label text="At Speed:"/>
+			<label text="At Speed: "/>
+			<label text="            "/>
+
 			<rectled>
 		        	<halpin>"spindle-at-speed-led"</halpin> 
 		        	<height>30</height> 
@@ -49,7 +53,7 @@
 		        <majorscale>1</majorscale>
 		        <minorscale>0.2</minorscale>
 		        <region1>(0,11,"green")</region1>
-		        <region2>(11,15,"green")</region2>
+		        <region2>(11,15,"yellow")</region2>
 		        <region3>(15,20,"red")</region3>
 		</meter>
 	</labelframe>
