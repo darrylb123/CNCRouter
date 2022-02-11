@@ -17,5 +17,5 @@ net up-to-speed <= vfd.spindle-at-speed
 net current-speed <= vfd.spindle-speed-fb
 net up-to-speed-not => motion.feed-inhibit
 
-loadusr halui -ini /home/cncuser/linuxcnc/configs/MensShed/halui.ini
+loadusr halui -ini /home/cncuser/linuxcnc/configs/Mens_Shed/halui.ini
 
