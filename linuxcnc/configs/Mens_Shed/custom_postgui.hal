@@ -5,8 +5,10 @@
 # **** Use COMMANDED spindle velocity from LinuxCNC because no spindle encoder was specified
 
 net current-speed    => pyvcp.spindle-speed
+net spindle-cmd-rpm-abs => pyvcp.spindle-setpoint
 
-net up-to-speed => pyvcp.spindle-at-speed-led
+net spindle-at-speed => pyvcp.spindle-at-speed-led
 #
 net spindle-current => pyvcp.spindle-current
 net remote-touchplate-mm halui.mdi-command-00 <= pyvcp.touchplate-mm
+
