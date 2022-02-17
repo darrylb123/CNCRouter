@@ -4,7 +4,7 @@
 # --- X drive ALM ---
 net axis.0.amp−fault−in       <= parport.1.pin-09-in-not
 
-loadusr -Wn vfd hy_vfd -n vfd -d /dev/ttyS0 -p none -r 9600
+loadusr -Wn vfd hy_vfd -n vfd -d /dev/ttyUSB0 -p none -r 9600
 loadrt not count=1
 
 addf not.0 servo-thread
