@@ -47,6 +47,10 @@
     {
       "nr": 12,
       "path": "6.4mm_Endmill.fctb"
+    },
+    {
+      "nr": 13,
+      "path": "90degree_Vbit.fctb"
     }
   ],
   "version": 1
