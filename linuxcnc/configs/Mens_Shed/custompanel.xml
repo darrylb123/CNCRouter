@@ -9,6 +9,15 @@
  			</button>
 		</hbox>
 	</labelframe>
+	<labelframe text="Parking">
+		<hbox> 
+			<boxanchor anchor="center"/>
+			<button>
+     				<halpin>"go-to-park"</halpin>
+     				<text>"Go to Park"</text> 
+ 			</button>
+		</hbox>
+	</labelframe>
 	<labelframe text="Spindle Speed">
 		<table flexible_rows="[3]" flexible_columns="[3]">
 		<tablesticky sticky="new"/>
