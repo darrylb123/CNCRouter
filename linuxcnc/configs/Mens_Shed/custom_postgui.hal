@@ -11,4 +11,5 @@ net spindle-at-speed => pyvcp.spindle-at-speed-led
 #
 net spindle-current => pyvcp.spindle-current
 net remote-touchplate-mm halui.mdi-command-00 <= pyvcp.touchplate-mm
+net go-to-park halui.mdi-command-01 <= pyvcp.go-to-park
 
